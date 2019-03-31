@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Юлия Адерихо](https://up.htmlacademy.ru/adaptive/16/user/961301).
-* Наставник: `Неизвестно`.
+- Студент: [Юлия Адерихо](https://up.htmlacademy.ru/adaptive/16/user/961301).
+- Наставник: [Дмитрий Походня](https://htmlacademy.ru/profile/id166319).
 
 ---
 
