@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="page-header">
+      <h1 class="page-header__title">Cat Energy</h1>
+      <a class="page-header__logo">
+        <img
+          class="page-header__logo-img"
+          src="http://placehold.it/100x100"
+          alt="Cat Energy"
+          width="100"
+          height="100"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <!-- пока нет макета с элементами списка, но заготовка на будущее -->
+        <div class="main-nav-wrapper">
+          <ul class="main-nav-list">
+            <li class="site-list__item"></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="page-main__title">Функциональное питание для котов</h1>
+      <p class="intro__text">Занялся собой? Займись котом!</p>
+      <img
+        class="intro__food-img"
+        src="http://placehold.it/400x300"
+        alt="Фото Cat Energy с курицей"
+        width="400"
+        height="300"
+      />
+      <a class="intro__choice-program" href="form.html">Подобрать программу</a>
 
+      <section class="program-suggestion">
+        <h2 class="visually-hidden">Список программ для кота</h2>
+        <ul class="program-list">
+          <li class="site-list__item program-card">
+            <h3 class="program-card__title">Похудение</h3>
+            <p class="program-card__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+              сбросить лишний вес.
+            </p>
+            <a href="catalog.html">Каталог Slim</a>
+          </li>
+          <li class="site-list__item program-card">
+            <h3 class="program-card__title">Набор массы</h3>
+            <p class="program-card__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a href="catalog-slim.html">Каталог Pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="arguments">
+        <h2 class="arguments__title">Как это работает</h2>
+        <ul class="arguments-list">
+          <li class="arguments-list__item arguments-list__item--profit">
+            Функциональное питание содержит только полезные питательные
+            вещества.
+          </li>
+          <li class="arguments-list__item arguments-list__item--preparing">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и
+            готово.
+          </li>
+          <li class="arguments-list__item arguments-list__item--eating">
+            Замените один-два приему обычной еды на наше функциональное питание.
+          </li>
+          <li class="arguments-list__item arguments-list__item--results">
+            Уже через месяц наслаждайтсь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__title">Cat Energy</p>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vk"
+                href="https://vk.com/htmlacademy"
+                >ВКонтакте</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--instagram"
+                href="https://www.instagram.com/htmlacademy"
+                >Instagram</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--fb"
+                href="https://www.facebook.com/htmlacademy"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright_text">Website by</b>
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <span>HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
