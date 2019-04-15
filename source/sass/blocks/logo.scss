@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--text {
+    cursor: pointer;
+    display: block;
+  }
+
+  &--text:hover,
+  &--text:focus {
+    opacity: 0.8;
+  }
+
+  &--text:active {
+    opacity: 0.6;
+  }
+}

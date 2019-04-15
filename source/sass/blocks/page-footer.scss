@@ -1,0 +1,12 @@
+.page-footer {
+  background-color: $main-background-additional;
+  padding: 36px 20px 22px 20px;
+
+  &__logo {
+    margin-bottom: 28px;
+  }
+
+  &__separator {
+    opacity: 0.3;
+  }
+}

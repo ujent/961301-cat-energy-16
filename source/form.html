@@ -3,37 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <title>Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="page-header__title">Cat Energy</h1>
-      <a class="page-header__logo" href="index.html">
+    <header class="page-header page-header--inner">
+      <h1 class="visually-hidden">Cat Energy</h1>
+      <a class="page-header__logo logo" href="index.html">
         <img
-          class="page-header__logo-img"
-          src="http://placehold.it/100x100"
+          class="logo__img"
+          src="img/logo-mobile.svg"
           alt="Cat Energy"
-          width="100"
-          height="100"
+          width="191"
+          height="39"
         />
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
+          <img
+            src="img/icon-mobile-menu.svg"
+            alt="Меню"
+            width="25"
+            height="19"
+          />
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- пока нет макета с элементами списка, но заготовка на будущее -->
         <div class="main-nav-wrapper">
-          <ul class="main-nav-list site-list">
+          <ul class="site-list main-nav-list">
             <li class="site-list__item"></li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main class="page-main"></main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__title">Cat Energy</p>
+        <a class="page-footer__logo logo--text" href="index.html">
+          <img
+            class="logo__img"
+            src="img/logo-footer.svg"
+            alt="Cat Energy logo"
+            width="128"
+            height="24"
+          />
+        </a>
+        <hr class="page-footer__separator" />
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list site-list">
             <li class="social__item">
               <a
                 class="social__link social__link--vk"
@@ -57,6 +78,7 @@
             </li>
           </ul>
         </div>
+        <hr class="page-footer__separator" />
         <div class="page-footer__copyright copyright">
           <b class="copyright_text">Website by</b>
           <a

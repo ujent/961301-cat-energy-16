@@ -1,0 +1,36 @@
+.product {
+  padding: 0 20px 25px 20px;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.product-card {
+  display: flex;
+
+  &__title {
+    color: $additional-black;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-transform: uppercase;
+    max-width: 74px;
+
+    margin: 22px 0 16px 0;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    color: $additional-grey;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+
+    margin: 0;
+  }
+
+  &__info-wrapper {
+    width: 100%;
+  }
+}
