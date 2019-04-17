@@ -3,26 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Cat Energy</h1>
-      <a class="page-header__logo">
+      <h1 class="visually-hidden">Cat Energy</h1>
+      <a class="page-header__logo logo">
         <img
-          class="page-header__logo-img"
-          src="http://placehold.it/100x100"
+          class="logo__img"
+          src="img/logo-mobile.svg"
           alt="Cat Energy"
-          width="100"
-          height="100"
+          width="191"
+          height="39"
         />
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
+          <img
+            src="img/icon-mobile-menu.svg"
+            alt="Меню"
+            width="25"
+            height="19"
+          />
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- пока нет макета с элементами списка, но заготовка на будущее -->
         <div class="main-nav-wrapper">
-          <ul class="main-nav-list">
+          <ul class="site-list main-nav-list">
             <li class="site-list__item"></li>
           </ul>
         </div>
@@ -30,64 +41,95 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Функциональное питание для котов</h1>
-      <p class="intro__text">Занялся собой? Займись котом!</p>
-      <img
-        class="intro__food-img"
-        src="http://placehold.it/400x300"
-        alt="Фото Cat Energy с курицей"
-        width="400"
-        height="300"
-      />
-      <a class="intro__choice-program" href="form.html">Подобрать программу</a>
-
+      <div class="intro">
+        <h1 class="intro__title">Функциональное питание для котов</h1>
+        <p class="intro__text">Занялся собой? Займись котом!</p>
+        <img
+          class="intro__food-img"
+          src="img/index-can-mobile@1x.png"
+          alt="Фото Cat Energy с курицей"
+          width="280"
+          height="270"
+        />
+      </div>
+      <a class="button button--link page-main__choice-program" href="form.html"
+        >Подобрать программу</a
+      >
       <section class="program-suggestion">
         <h2 class="visually-hidden">Список программ для кота</h2>
-        <ul class="program-list">
-          <li class="site-list__item program-card">
+        <ul class="program-list site-list">
+          <li class="program-list__item program-card">
             <h3 class="program-card__title">Похудение</h3>
             <p class="program-card__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
               сбросить лишний вес.
             </p>
-            <a href="catalog.html">Каталог Slim</a>
+            <hr class="program-card__separator" />
+            <a class="program-card__catalog-link" href="catalog.html"
+              >Каталог Slim</a
+            >
           </li>
-          <li class="site-list__item program-card">
+          <li class="program-list__item program-card">
             <h3 class="program-card__title">Набор массы</h3>
             <p class="program-card__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a href="catalog-slim.html">Каталог Pro</a>
+            <hr class="program-card__separator" />
+            <a class="program-card__catalog-link" href="catalog-slim.html"
+              >Каталог Pro</a
+            >
           </li>
         </ul>
       </section>
       <section class="arguments">
         <h2 class="arguments__title">Как это работает</h2>
-        <ul class="arguments-list">
-          <li class="arguments-list__item arguments-list__item--profit">
-            Функциональное питание содержит только полезные питательные
-            вещества.
+        <ul class="arguments-list site-list">
+          <li class="arguments-list__item argument-card">
+            <div class="argument-card__img argument-card__img--profit"></div>
+            <p class="argument-card__text">
+              Функциональное питание содержит только полезные питательные
+              вещества.
+            </p>
           </li>
-          <li class="arguments-list__item arguments-list__item--preparing">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и
-            готово.
+          <li class="arguments-list__item argument-card">
+            <div class="argument-card__img argument-card__img--preparing"></div>
+            <p class="argument-card__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
           </li>
-          <li class="arguments-list__item arguments-list__item--eating">
-            Замените один-два приему обычной еды на наше функциональное питание.
+          <li class="arguments-list__item argument-card">
+            <div class="argument-card__img argument-card__img--eating"></div>
+            <p class="argument-card__text">
+              Замените один-два приему обычной еды на наше функциональное
+              питание.
+            </p>
           </li>
-          <li class="arguments-list__item arguments-list__item--results">
-            Уже через месяц наслаждайтсь изменениями к лучшему вашего питомца!
+          <li class="arguments-list__item argument-card">
+            <div class="argument-card__img argument-card__img--results"></div>
+            <p class="argument-card__text">
+              Уже через месяц наслаждайтсь изменениями к лучшему вашего питомца!
+            </p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__title">Cat Energy</p>
+        <a class="page-footer__logo logo--text">
+          <img
+            class="logo__img"
+            src="img/logo-footer.svg"
+            alt="Cat Energy logo"
+            width="128"
+            height="24"
+          />
+        </a>
+        <hr class="page-footer__separator" />
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list site-list">
             <li class="social__item">
               <a
                 class="social__link social__link--vk"
@@ -111,6 +153,7 @@
             </li>
           </ul>
         </div>
+        <hr class="page-footer__separator" />
         <div class="page-footer__copyright copyright">
           <b class="copyright_text">Website by</b>
           <a

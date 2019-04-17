@@ -3,26 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="page-header__title">Cat Energy</h1>
-      <a class="page-header__logo" href="index.html">
+    <header class="page-header page-header--inner">
+      <h1 class="visually-hidden">Cat Energy</h1>
+      <a class="page-header__logo logo" href="index.html">
         <img
-          class="page-header__logo-img"
-          src="http://placehold.it/100x100"
+          class="logo__img"
+          src="img/logo-mobile.svg"
           alt="Cat Energy"
-          width="100"
-          height="100"
+          width="191"
+          height="39"
         />
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
+          <img
+            src="img/icon-mobile-menu.svg"
+            alt="Меню"
+            width="25"
+            height="19"
+          />
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- пока нет макета с элементами списка, но заготовка на будущее -->
         <div class="main-nav-wrapper">
-          <ul class="main-nav-list site-list">
+          <ul class="site-list main-nav-list">
             <li class="site-list__item"></li>
           </ul>
         </div>
@@ -32,57 +43,33 @@
       <h1 class="page-main--inner__title">Каталог продукции</h1>
       <section class="products">
         <h2 class="visually-hidden">Основная продукция</h2>
-        <ul class="products__list">
+        <ul class="products__list site-list">
           <li class="product">
-            <h3 class="product__title">Cat Energy Pro 500 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Pro 500 грамм с курицей"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">500 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Курица</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">700 Р.</span>
-              </p>
-            </div>
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/chicken-small-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Pro 500 грамм с курицей"
+                width="140"
+                height="144"
+              />
 
-            <button class="button product__order" type="button">
-              Заказать
-            </button>
-          </li>
-          <li class="product">
-            <h3 class="product__title">Cat Energy Pro 1000 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Pro 1000 грамм с курицей"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">1000 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Курица</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">1000 Р.</span>
-              </p>
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Pro 500 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">500 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Курица</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">700 Р.</span>
+                </p>
+              </div>
             </div>
 
             <button class="button product__order" type="button">
@@ -91,27 +78,31 @@
           </li>
 
           <li class="product">
-            <h3 class="product__title">Cat Energy Pro 500 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Pro 500 грамм с рыбой"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">500 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Рыба</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">700 Р.</span>
-              </p>
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/chicken-big-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Pro 1000 грамм с курицей"
+                width="140"
+                height="144"
+              />
+
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Pro 1000 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">1000 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Курица</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">1000 Р.</span>
+                </p>
+              </div>
             </div>
 
             <button class="button product__order" type="button">
@@ -120,27 +111,31 @@
           </li>
 
           <li class="product">
-            <h3 class="product__title">Cat Energy Pro 1000 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Pro 1000 грамм с рыбой"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">1000 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Рыба</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">1000 Р.</span>
-              </p>
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/fish-small-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Pro 500 грамм с рыбой"
+                width="140"
+                height="144"
+              />
+
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Pro 500 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">500 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Рыба</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">700 Р.</span>
+                </p>
+              </div>
             </div>
 
             <button class="button product__order" type="button">
@@ -149,27 +144,31 @@
           </li>
 
           <li class="product">
-            <h3 class="product__title">Cat Energy Slim 500 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Slim 500 грамм с гречкой"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">500 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Гречка</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">400 Р.</span>
-              </p>
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/fish-big-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Pro 1000 грамм с рыбой"
+                width="140"
+                height="144"
+              />
+
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Pro 1000 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">1000 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Рыба</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">1000 Р.</span>
+                </p>
+              </div>
             </div>
 
             <button class="button product__order" type="button">
@@ -178,27 +177,31 @@
           </li>
 
           <li class="product">
-            <h3 class="product__title">Cat Energy Slim 1000 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Slim 1000 грамм с гречкой"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">1000 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Гречка</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">700 Р.</span>
-              </p>
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/buckwheat-small-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Slim 500 грамм с гречкой"
+                width="140"
+                height="144"
+              />
+
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">500 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Гречка</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">400 Р.</span>
+                </p>
+              </div>
             </div>
 
             <button class="button product__order" type="button">
@@ -207,27 +210,64 @@
           </li>
 
           <li class="product">
-            <h3 class="product__title">Cat Energy Slim 500 г</h3>
-            <img
-              class="product__img"
-              src="http://placehold.it/100x200"
-              alt="Фото товара Cat Energy Slim 500 грамм с рисом"
-              width="100"
-              height="200"
-            />
-            <div class="product__info-wrapper">
-              <p class="product__info">
-                <span class="product__field">Объем</span>
-                <span class="product__value">500 г</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Вкус</span>
-                <span class="product__value">Рис</span>
-              </p>
-              <p class="product__info">
-                <span class="product__field">Цена</span>
-                <span class="product__value">500 Р.</span>
-              </p>
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/buckwheat-big-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Slim 1000 грамм с гречкой"
+                width="140"
+                height="144"
+              />
+
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Slim 1000 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">1000 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Гречка</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">700 Р.</span>
+                </p>
+              </div>
+            </div>
+
+            <button class="button product__order" type="button">
+              Заказать
+            </button>
+          </li>
+
+          <li class="product">
+            <div class="product-card">
+              <img
+                class="product-card__img"
+                src="img/rice-small-mobile@1x.jpg"
+                alt="Фото товара Cat Energy Slim 500 грамм с рисом"
+                width="140"
+                height="144"
+              />
+
+              <div class="product-card__info-wrapper">
+                <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
+
+                <p class="product-card__info">
+                  <span class="product-card__field">Объем</span>
+                  <span class="product-card__value">500 г</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Вкус</span>
+                  <span class="product-card__value">Рис</span>
+                </p>
+                <p class="product-card__info">
+                  <span class="product-card__field">Цена</span>
+                  <span class="product-card__value">500 Р.</span>
+                </p>
+              </div>
             </div>
 
             <button class="button product__order" type="button">
@@ -240,7 +280,10 @@
           <p class="show-products__description">
             На самом деле вкусов гораздо больше!
           </p>
-          <button type="button" class="button show-products__action">
+          <button
+            type="button"
+            class="button button--additional show-products__action"
+          >
             Показать все
           </button>
         </div>
@@ -248,9 +291,18 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__title">Cat Energy</p>
+        <a class="page-footer__logo logo--text" href="index.html">
+          <img
+            class="logo__img"
+            src="img/logo-footer.svg"
+            alt="Cat Energy logo"
+            width="128"
+            height="24"
+          />
+        </a>
+        <hr class="page-footer__separator" />
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list site-list">
             <li class="social__item">
               <a
                 class="social__link social__link--vk"
@@ -274,6 +326,7 @@
             </li>
           </ul>
         </div>
+        <hr class="page-footer__separator" />
         <div class="page-footer__copyright copyright">
           <b class="copyright_text">Website by</b>
           <a

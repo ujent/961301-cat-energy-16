@@ -1,0 +1,33 @@
+.intro {
+  position: relative;
+  background-color: $main-brand-color;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 305px;
+
+  box-sizing: border-box;
+  padding-top: 28px;
+
+  &__title {
+    color: #ffffff;
+    line-height: 36px;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  &__text {
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    line-height: 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__food-img {
+    position: absolute;
+    top: 167px;
+    left: 20px;
+  }
+}
