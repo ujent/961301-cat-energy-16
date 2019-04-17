@@ -2,7 +2,7 @@
   font: inherit;
   min-width: 280px;
   min-height: 40px;
-  background: $main-green-color;
+  background: $main-brand-color;
   color: #ffffff;
   font-size: 16px;
   line-height: 40px;
@@ -12,11 +12,11 @@
 
   &:hover,
   &:focus {
-    background: $main-green-color-hvr;
+    background: $main-brand-color-hvr;
   }
 
   &:active {
-    background: $main-green-color-down;
+    background: $main-brand-color-down;
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -26,16 +26,16 @@
 
   &--additional {
     background: $main-background-additional;
-    color: $additional-grey;
+    color: $additional-font-color;
   }
 
   &--additional:hover,
   &--additional:focus {
-    background: $additional-grey-hvr;
+    background: $additional-font-color-hvr;
   }
 
   &--additional:active {
-    background: $additional-grey-hvr;
-    color: $additional-grey-down;
+    background: $additional-font-color-hvr;
+    color: $additional-font-color-down;
   }
 }

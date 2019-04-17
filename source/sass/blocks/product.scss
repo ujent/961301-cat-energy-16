@@ -1,14 +1,14 @@
 .product {
   padding: 0 20px 25px 20px;
-  border-top: 1px solid $border-grey;
-  border-bottom: 1px solid $border-grey;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .product-card {
   display: flex;
 
   &__title {
-    color: $additional-black;
+    color: $main-font-color;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
@@ -22,9 +22,9 @@
     display: flex;
     justify-content: space-between;
 
-    color: $additional-grey;
+    color: $additional-font-color;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     line-height: 16px;
 
     margin: 0;

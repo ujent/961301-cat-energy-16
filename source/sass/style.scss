@@ -1,25 +1,24 @@
-@import 'variables.scss';
-@import 'blocks/page-header.scss';
-@import 'blocks/page-main.scss';
-@import 'blocks/page-footer.scss';
-@import 'blocks/main-nav.scss';
-
-@import 'blocks/logo.scss';
-@import 'blocks/button.scss';
-@import 'blocks/intro.scss';
-@import 'blocks/program-card.scss';
-@import 'blocks/program-list.scss';
-@import 'blocks/site-list.scss';
-@import 'blocks/arguments.scss';
-@import 'blocks/products.scss';
-@import 'blocks/product.scss';
-@import 'blocks/show-products.scss';
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
+@import "blocks/button.scss";
+@import "blocks/intro.scss";
+@import "blocks/program-card.scss";
+@import "blocks/program-list.scss";
+@import "blocks/site-list.scss";
+@import "blocks/arguments.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/show-products.scss";
 
 body {
   margin: 0;
 
   font-size: 14px;
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
   color: #444444;
   background-color: #ffffff;
@@ -39,8 +38,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -48,7 +47,6 @@ input[type='radio'].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
