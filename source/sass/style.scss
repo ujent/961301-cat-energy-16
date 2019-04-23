@@ -1,4 +1,6 @@
 @import "variables.scss";
+@import "mixins.scss";
+
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
@@ -10,22 +12,24 @@
 @import "blocks/program-list.scss";
 @import "blocks/site-list.scss";
 @import "blocks/arguments.scss";
+@import "blocks/arguments-list.scss";
+@import "blocks/argument-card.scss";
 @import "blocks/products.scss";
 @import "blocks/product.scss";
 @import "blocks/show-products.scss";
 
 body {
+  min-width: 320px;
   margin: 0;
+  padding: 0;
 
   font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
   line-height: 18px;
-  color: #444444;
+  color: $main-font-color;
   background-color: #ffffff;
   text-align: center;
-
-  /*временно, для удобства */
-  width: 320px;
 }
 
 a {

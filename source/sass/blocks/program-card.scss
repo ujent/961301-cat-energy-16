@@ -1,6 +1,6 @@
 .program-card {
   background: $main-background-additional;
-  padding: 24px 20px 22px 20px;
+  box-sizing: border-box;
 
   &__title {
     font-size: 24px;
@@ -8,8 +8,8 @@
     color: $main-font-color;
     font-weight: normal;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 32px;
+    margin-top: 4px;
+    margin-bottom: 28px;
   }
 
   &__description {
@@ -22,13 +22,14 @@
   &__separator {
     opacity: 0.3;
     margin-top: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   &__catalog-link {
     color: $main-font-color;
     font-size: 16px;
     line-height: 16px;
+    text-transform: uppercase;
 
     display: block;
     text-align: left;
@@ -36,5 +37,47 @@
 
   &__catalog-link:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 372px;
+    justify-content: space-between;
+
+    text-align: left;
+
+    &__title {
+      font-size: 36px;
+      line-height: 37px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__catalog-link {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__separator {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .program-card {
+    &__title {
+      margin-bottom: 74px;
+    }
+
+    &__description {
+      margin: 46px 0 30px 0;
+    }
   }
 }

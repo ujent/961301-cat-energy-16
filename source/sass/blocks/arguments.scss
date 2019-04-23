@@ -12,51 +12,25 @@
   }
 }
 
-.arguments-list {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .arguments {
+    padding: 0 118px 0 30px;
 
-  &__item {
-    margin-bottom: 30px;
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 72px;
+      margin-top: 46px;
+    }
   }
 }
 
-.argument-card {
-  display: flex;
+@media (min-width: $desctop-width) {
+  .arguments {
+    padding: 0 110px;
 
-  &__img {
-    margin-right: 20px;
-
-    background-color: $main-brand-color;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-width: 60px;
-    min-height: 60px;
-  }
-
-  &__img--profit {
-    background-image: url("../img/advantage-leaf@1x.png");
-  }
-
-  &__img--preparing {
-    background-image: url("../img/advantage-powder@1x.png");
-  }
-
-  &__img--eating {
-    background-image: url("../img/advantage-dining@1x.png");
-  }
-
-  &__img--results {
-    background-image: url("../img/advantage-clock@1x.png");
-  }
-
-  &__text {
-    text-align: left;
-    color: $additional-font-color;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "Arial", "Helvetica", sans-serif;
-
-    margin: 0;
+    &__title {
+      margin-top: 54px;
+    }
   }
 }

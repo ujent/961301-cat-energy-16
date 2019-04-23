@@ -1,13 +1,17 @@
 .intro {
-  position: relative;
-  background-color: $main-brand-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 305px;
+  background-color: #ffffff;
 
-  box-sizing: border-box;
-  padding-top: 28px;
+  &__wrapper {
+    position: relative;
+
+    background-color: $main-brand-color;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 305px;
+    box-sizing: border-box;
+    padding-top: 26px;
+  }
 
   &__title {
     color: #ffffff;
@@ -18,7 +22,7 @@
   }
 
   &__text {
-    margin: 20px 0 0 0;
+    margin: 25px 0 0 0;
     color: #ffffff;
     line-height: 14px;
     font-size: 14px;
@@ -28,6 +32,88 @@
   &__food-img {
     position: absolute;
     top: 167px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__food-img--big {
+    display: none;
+  }
+
+  &__choice-program {
+    margin: 134px 20px 0 20px;
+
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    &__wrapper {
+      text-align: left;
+
+      height: 200px;
+      background: #ffffff;
+      background-image: none;
+      padding: 0px 60px 0 118px;
+    }
+
+    &__title {
+      color: $main-font-color;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__text {
+      color: $main-font-color;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 42px 0 52px 0;
+    }
+
+    &__choice-program-wrapper {
+      padding-top: 30px;
+
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      height: 609px;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+
+    &__choice-program {
+      min-width: 245px;
+      width: 245px;
+      height: 52px;
+
+      font-size: 20px;
+      line-height: 52px;
+      text-align: center;
+
+      margin: 0 0 0 120px;
+    }
+
+    &__food-img--main {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .intro {
+    &__wrapper {
+      height: 230px;
+      padding: 110px 30px 0 82px;
+    }
+
+    &__choice-program {
+      margin: 0;
+    }
+
+    &__food-img {
+      position: absolute;
+      top: 28px;
+      left: 119%;
+      //transform: translateX(-50%);
+    }
   }
 }

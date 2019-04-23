@@ -1,0 +1,84 @@
+.argument-card {
+  display: flex;
+
+  &__img {
+    margin-right: 20px;
+
+    background-color: $main-brand-color;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__img--profit {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &__img--preparing {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &__img--eating {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &__img--results {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &__text {
+    text-align: left;
+    color: $additional-font-color;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    margin: 0;
+    padding-right: 6px;
+  }
+
+  &__number {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .argument-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    max-width: 244px;
+    min-height: 228px;
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__img {
+      margin-bottom: 34px;
+
+      background-color: $main-brand-color;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__number {
+      display: block;
+
+      position: absolute;
+      left: 110px;
+      top: -41px;
+      z-index: -1;
+
+      font-size: 281px;
+      font-family: "Oswald", "Arial", sans-serif;
+      line-height: 281px;
+      color: $main-background-additional;
+    }
+  }
+}
