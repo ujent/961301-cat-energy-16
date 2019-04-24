@@ -14,18 +14,18 @@
   </head>
 
   <body>
-    <header class="page-header page-header--inner">
+    <header class="page-header  page-header--inner">
       <h1 class="visually-hidden">Cat Energy</h1>
       <a class="page-header__logo logo" href="index.html">
         <img
           class="logo__img"
           src="img/logo-mobile.svg"
-          alt="Cat Energy"
+          alt="Cat Energy logo"
           width="191"
           height="39"
         />
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
           <img
             src="img/icon-mobile-menu.svg"
@@ -35,19 +35,25 @@
           />
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <!-- пока нет макета с элементами списка, но заготовка на будущее -->
-        <div class="main-nav-wrapper">
-          <ul class="site-list main-nav-list">
-            <li class="site-list__item"></li>
-          </ul>
-        </div>
+        <ul class="site-list main-nav-list">
+          <li class="main-nav-list__item">
+            <a href="index.html" class="main-nav-list__link">Главная</a>
+          </li>
+          <li class="main-nav-list__item">
+            <a href="catalog.html" class="main-nav-list__link"
+              >Каталог продукции</a
+            >
+          </li>
+          <li class="main-nav-list__item main-nav-list__item--active">
+            <a class="main-nav-list__link">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
-
     <main class="page-main"></main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo--text" href="index.html">
+        <a class="page-footer__logo logo--text">
           <img
             class="logo__img"
             src="img/logo-footer.svg"

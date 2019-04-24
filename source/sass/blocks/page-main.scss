@@ -10,8 +10,22 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-main {
+    &--inner__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0 33px 166px 33px;
+    }
+  }
+}
+
 @media (min-width: $desctop-width) {
   .page-main {
+    &--inner__title {
+      margin: 0 33px 106px 110px;
+    }
+
     &__intro {
       display: none;
     }
