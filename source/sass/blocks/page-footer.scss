@@ -10,3 +10,27 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 0;
+
+    &__separator {
+      display: none;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 58px 30px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-footer {
+    &__wrapper {
+      padding: 60px 110px 56px 110px;
+    }
+  }
+}

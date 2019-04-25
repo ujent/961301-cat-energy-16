@@ -1,8 +1,4 @@
 .page-main {
-  &__choice-program {
-    margin: 140px 20px 0 20px;
-  }
-
   &--inner__title {
     color: $main-font-color;
     font-size: 36px;
@@ -11,5 +7,27 @@
     text-align: left;
 
     margin: 18px 0 22px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    &--inner__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0 33px 166px 33px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-main {
+    &--inner__title {
+      margin: 0 33px 106px 0;
+    }
+
+    &__intro {
+      display: none;
+    }
   }
 }
